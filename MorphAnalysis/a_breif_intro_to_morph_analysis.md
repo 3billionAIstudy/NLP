@@ -29,7 +29,10 @@
   - [어떤 블로거의 친절한 설명](https://yabmoons.tistory.com/379): 별표시는 탐색 종료 가능 지점. 존재하는 문자열은 ABC, ABCD, BCG, BDE, ZYX 임을 알 수 있음.
   
   ![image](https://user-images.githubusercontent.com/126950833/234204904-c81d40e9-7c71-4580-9bca-1b840cb0b00a.png)
-  - 이런 그림을 한국어 
+  - 한글 형태소 사전으로 만들면:
+  
+  ![image](https://user-images.githubusercontent.com/126950833/234210147-f140366c-6cb4-426b-b5c4-351c790def94.png)
+
 
 ## 뇌피셜
 ### 합성가능성!?
@@ -37,11 +40,12 @@
 ### substructure 검색
 - 아호-코라식 알고리즘이 KMP 보다 빠르니까.. 특정 구조가 포함된 모든 SMILES 검색해줘~ 이런거 샵가능하지 않을까
 ## 다음에는?
-- 딥러닝 기반 형태소 분석기
-- 
+- 형태소 간의 결합과 불규칙 활용은 어떻게 구현하나?
+- 딥러닝 기반 형태소 분석기(LSTM, transformer based etc.)
 ## 참고
 - [KoNLPy](https://konlpy-ko.readthedocs.io/ko/v0.4.3/morph/)
 - [한국어 품사 태그 비교표](https://docs.google.com/spreadsheets/d/1OGAjUvalBuX-oZvZ_-9tEfYD2gQe7hTGsgUpiiBSXI8/edit#gid=0)
 - [카카오의 딥러닝 기반 형태소 분석기 소개글](https://brunch.co.kr/@kakao-it/308)
 - [khaii github](https://brunch.co.kr/@kakao-it/308)
 - [김기현님 자연어처리](https://kh-kim.gitbook.io/natural-language-processing-with-pytorch/)
+- [KOMORAN menual](https://t1.daumcdn.net/cfile/tistory/24582942542946E206?download)
