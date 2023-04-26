@@ -67,6 +67,8 @@
   ![image](https://user-images.githubusercontent.com/126950833/234453355-27057a4e-f1cd-4738-9b8e-28bca54b3756.png)
 
   - 이를 data driven 관점에서 보면, 말뭉치에서 **빈도**를 기반으로 P(단어|품사), P(현재품사 | 이전품사)를 계산 후에 P(품사|단어)를 예측(the system has markov property if and only if the current state depends on previous one).
+![image](https://user-images.githubusercontent.com/126950833/234499536-72d14dea-8507-4179-9751-7564367b228e.png)
+
 
 ## 뇌피셜
 ### 합성가능성!?
