@@ -18,8 +18,15 @@
   - 한국어라면? 마치 프리미티브 타입(Primitive type)이 없고 런타임에 오브젝트-값이 바인딩 되는 파이썬처럼, **접사**에 의해 의미가 바뀜. -> 근데 이제 이게 엄청 다양한 조합으로...
   - 어근을 찾아서 사전을 구축하는 방법이 가장 쉽게 떠올릴 수 있는 방법이지만(...)
   ![image](https://user-images.githubusercontent.com/126950833/234161882-6499981d-e46a-4b59-84e1-d085f509d263.png)
+  - **모호성 문제**
+    - 형태소 분석은 문장을 **형태소열**로 나누고 각각의 형태소를 부여하는 과정임: 시퀀스 라벨링(sequence labeling) 문제로 볼 수 있음. 근데 시퀀스 라벨링을 하려면 일단 시퀀스가 적당히 쪼개져(=단어 또는 형태소 기준으로) 있어야 할텐데?!
+    - "서울대공원"을 예로들면: 서울대+공원 또는 서울+대공원 모두 가능. 즉, 영어처럼 띄어쓰기 기준으로  나누는게 좋은 선택이 아님.
+    - "나누는" 문제를 시퀀스 세그맨테이션(sequence segmentation), 나누고 나서 무슨 형태소인지 맞추는 문제를 시퀀스 라벨링(sequential labeling)이라고 한다면, 한국어 자연어처리는 두가지 문제가 섞여서 더 어려워 짐.
+    - 여기에 띄어쓰기 오류, 신조어(맨 위에 예시에서 "존맛탱구리", "우주대존맛" 이런것들) 문제까지 겹치면 혼돈의 카오스임.
   
 ## 형태소 태그(일부)
+![image](https://user-images.githubusercontent.com/126950833/234436988-21255045-add1-449d-9c8c-17406b385819.png)
+
 ![image](https://user-images.githubusercontent.com/126950833/234161154-9f4dfadb-cde2-4dbb-be0f-eb4c2844c7c7.png)
 
 ## 대표적인 형태소 분석 알고리즘: 아호 코라식 알고리즘 활용
@@ -32,7 +39,7 @@
   - 한글 형태소 사전으로 만들면:
   
   ![image](https://user-images.githubusercontent.com/126950833/234210147-f140366c-6cb4-426b-b5c4-351c790def94.png)
-
+- ****
 
 ## 뇌피셜
 ### 합성가능성!?
@@ -49,3 +56,5 @@
 - [khaii github](https://brunch.co.kr/@kakao-it/308)
 - [김기현님 자연어처리](https://kh-kim.gitbook.io/natural-language-processing-with-pytorch/)
 - [KOMORAN menual](https://t1.daumcdn.net/cfile/tistory/24582942542946E206?download)
+- [HMM based pos tagger](https://lovit.github.io/nlp/2018/09/11/hmm_based_tagger/)
+- [자연어처리, 컴파일러 샵고인물 교수님(강승식 교수, HAM 개발하신분)](https://www.youtube.com/@user-fl2op3hz6g/videos)
