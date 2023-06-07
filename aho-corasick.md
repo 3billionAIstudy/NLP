@@ -2,6 +2,10 @@
 - 한국어 형태소 분석기에서 많이 사용하는 검색 알고리즘. 아호, 코라식 각각 사람 이름임.
 - 사전에 포함되어 있는 모든 접두사를 검색할 수 있음. 자동완성 같은거 구현할 때 쓰임. 바이오인포매틱스에서는 특정 패턴의 염기서열 검색 등에 사용 가능.
 - 시간 복잡도: O(N+p1+p2+..+pn)
+## 미리 알고 있으면 좋은 것들
+- [KMP algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
+- [trie structure](https://en.wikipedia.org/wiki/Trie)
+- [BFS](https://en.wikipedia.org/wiki/Breadth-first_search)
 ## Algorithm overview
 ### 크게보면 3단계
 - 입력 패턴(=형태소)에 대해 트라이 사전 구축
