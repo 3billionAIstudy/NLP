@@ -5,10 +5,11 @@
 
   ![image](https://github.com/3billionAIstudy/NLP/assets/126950833/89e4ef56-684c-4c2c-a3dc-a2b4c550c42f)
 
-## 미리 알고 있으면 좋은 것들
+## 미리 알고 있으면 좋은 것들 & 참고 자료
 - [KMP algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
 - [trie structure](https://en.wikipedia.org/wiki/Trie)
 - [BFS](https://en.wikipedia.org/wiki/Breadth-first_search)
+- [인도형님 유투브](https://www.youtube.com/watch?v=OFKxWFew_L0)
 ## Algorithm overview
 ### 크게보면 3단계
 - 입력 패턴(=형태소)에 대해 트라이 사전 구축
@@ -52,7 +53,7 @@
 
 ### 그림
 
-![image](https://github.com/3billionAIstudy/NLP/assets/126950833/762a3ca6-06d2-4503-82bc-2021bf34d928)
+![image](https://github.com/3billionAIstudy/NLP/assets/126950833/4b82f859-39dc-438b-aaaf-d2243d9c4922)
 
 
 ### 코드
@@ -91,5 +92,15 @@
 ``` 
 
 ## Search Example
+사실 failure link 말고 다른 종류의 link가 하나 더 필요함ㅎ
+output link라고..인도 형님 유투브에서는 dictionary link로 표시 하던데 똑같은 거임.
+암튼 output link + failure link를 따라가면서 substring matching 을 하는건데 이건 복잡하니까 다음 기회에... ~~는 그짓말이고 사실 이거 그림 찾다가 못찾았읍니다 ㅈㅅ~~
+### 그림
+### 코드
+
+
+
+
+
 
 
