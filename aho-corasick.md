@@ -48,8 +48,8 @@
         # Increment the counter to indicate that we see this word once more
         node.counter += 1
 ```
-
 ## Failure link(suffix link)
+
 ### 그림
 ### 코드
 ## Search Example
