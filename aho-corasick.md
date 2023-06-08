@@ -51,7 +51,45 @@
 ## Failure link(suffix link)
 
 ### 그림
+
+![image](https://github.com/3billionAIstudy/NLP/assets/126950833/762a3ca6-06d2-4503-82bc-2021bf34d928)
+
+
 ### 코드
+```
+1. Trie의 루트로부터 BFS를 수행하면서 Failure Link를 만든다.
+2. 현재 위치(p)와 가리키는 노드(q)에 대해서
+  (1) p가 루트라면, q의 Failure Link는 루트이다.
+  (2) p가 루트가 아니면, p의 실패 링크(pf)에서 q와 같은 문자로 이어지는 노드(r)가 있는지 확인한다.
+    1) 그런 r이 존재한다면 qf는 r을 가리킨다.
+    2) 그런 r이 존재하지 않는다면, p에 pf를 대입하고 (1)로 돌아가 과정을 반복한다.
+
+############################################################################################
+    def constructfail(self):
+        queue = Queue()
+        self.head.fail = self.head
+        queue.put(self.head)
+        while not queue.empty():
+            crr = queue.get()
+            for nextc in crr:
+                child = crr[nextc]
+                
+                if crr is self.head:
+                    child.fail = self.head
+                else :
+                    f = crr.fail
+                    while f is not self.head and nextc not in f:
+                        f = f.fail
+                    if nextc in f:
+                        f = f[nextc]
+                    child.fail = f
+                
+                child.addout(child.fail.out)
+                child.final |= child.fail.final
+                
+                queue.put(child)
+``` 
+
 ## Search Example
 
 
